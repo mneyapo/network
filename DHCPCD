@@ -1,0 +1,17 @@
+# Disabling DHCPCD
+
+sudo systemctl disable dhcpcd.service
+
+sudo systemctl stop dhcpcd.service
+
+# Enabling DHCPCD
+
+sudo systemctl enable dhcpcd.service
+
+sudo systemctl daemon-reload
+
+# status dhcpcd
+sudo systemctl status dhcpcd
+
+# restart networking service 
+sudo service networking restart
